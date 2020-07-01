@@ -44,7 +44,7 @@ def process_or_store(comment):
         logging.exception("Problem pushing to firehose")
 
 
-firehose_client = boto3.client('firehose', region_name="us-east-1")
+firehose_client = boto3.client('firehose', region_name="ap-southeast-2")
 LOG_FILENAME = '/tmp/reddit-stream.log'
 logging.basicConfig(filename=LOG_FILENAME,level=logging.DEBUG)
 
